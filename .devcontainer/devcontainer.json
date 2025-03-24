@@ -1,0 +1,22 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/bin/zsh",
+            "icon": "terminal-zsh"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      },
+      "extensions": [
+        "denoland.vscode-deno"
+      ]
+    }
+  }
+}
