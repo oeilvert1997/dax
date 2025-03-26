@@ -8,6 +8,4 @@ const installPath = '/opt';
 await $`curl -LsS https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz -o ${homePath}/nvim-linux-x86_64.tar.gz`;
 await $`sudo tar -xzf ${homePath}/nvim-linux-x86_64.tar.gz -C ${installPath}`;
 await $`rm -rf ${homePath}/nvim-linux-x86_64.tar.gz`;
-// await $`echo 'export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH:/opt/nvim-linux-x86_64/bin' >> ${homePath}/.zshrc`;
-await $`echo 'homePath is ${homePath}`;
-await $`echo 'export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH:/opt/nvim-linux-x86_64/bin' >> $HOME/.zshrc`;
+await $`echo 'export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH:/opt/nvim-linux-x86_64/bin' >> ${homePath}/.zshrc`;
