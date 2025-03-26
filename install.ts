@@ -9,4 +9,4 @@ await $`curl -LsS https://github.com/neovim/neovim/releases/latest/download/nvim
 await $`sudo tar -xzf ${homePath}/nvim-linux-x86_64.tar.gz -C ${installPath}`;
 await $`rm -rf ${homePath}/nvim-linux-x86_64.tar.gz`;
 // await $`echo 'export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH:/opt/nvim-linux-x86_64/bin' >> ${homePath}/.zshrc`;
-await $`echo 'export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH:/opt/nvim-linux-x86_64/bin' >> .zshrc`;
+await $`echo 'export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH:/opt/nvim-linux-x86_64/bin' >> ${homePath}/hello.txt`;
